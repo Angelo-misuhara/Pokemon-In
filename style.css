@@ -1,0 +1,89 @@
+* {
+  font-family: "Manrope", sans-serif;
+  flex-wrap: wrap;
+}
+.Pokemon-name {
+  font-weight: bolder;
+}
+body {
+  height: 100vh;
+  color: #0b2314;
+  /* background-color: #e0f5e8; */
+}
+.p-2 {
+  margin-top: 4rem;
+}
+#color {
+  background-color: #F9DBBB;
+}
+.fireDiv{
+  font-weight: bolder;
+}
+main {
+  background-color: #4E6E81;
+}
+.list-item {
+  list-style-type: none;
+}
+#non {
+  display: none;
+}
+#attributes {
+  margin-left: 2rem;
+}
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+#attribute-Container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+}
+
+#attribute-Container img {
+  object-fit: contain;
+  width: 18%;
+}
+
+@media screen and (max-width: 498px) {
+  body {
+    width: 100%;
+  }
+  .list-group-item {
+    font-size: 0.9rem;
+  }
+  #attribute-Container {
+    align-items: center;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  #attribute-Container img {
+    margin-top: 0;
+    padding-top: 0;
+    width: 90%;
+  }
+  .col {
+    grid-template-columns: 1fr;
+  }
+  #color {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  #rowro {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5px;
+  }
+}
