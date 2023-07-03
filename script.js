@@ -81,7 +81,8 @@ searchBtn.addEventListener('click', async () => {
 });
 
 function clearSearchResult() {
-  searchResult.style.display='none'
+  searchResult.style.display = 'none'
+  noPOKE.style.display='none'
   
 }
 
