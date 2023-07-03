@@ -7,6 +7,8 @@ const Abilitiesh3 = document.querySelector('.Abilitiesh3');
 const Characteristic = document.querySelector('#Characteristic');
 const typelist = document.querySelector('#type')
 const searchBtn = document.querySelector('#button-addon2');
+const hidetypec = document.querySelector('#typec');
+const attributeContainer =document.querySelector('#attribute-Container')
 
 const searchResult = document.querySelector('#container-search-resut');
 non
@@ -63,10 +65,27 @@ pokeApi = async () => {
     console.log('hi')
   };
 }
+let gifLoading = document.querySelector('.gif');
+searchBtn.addEventListener('click', async () => {
+  gifLoading.style.display = 'block';
 
-searchBtn.addEventListener('click', () => {
+  // Clear previous search result
+  clearSearchResult();
+
+  await new Promise(resolve => setTimeout(resolve, 3000));
+
   pokeApi();
-})
+
+  gifLoading.style.display = 'none';
+  nameSearch.value = '';
+});
+
+function clearSearchResult() {
+  searchResult.style.display='none'
+  
+}
+
+
 
 
 //fire type

@@ -16,6 +16,19 @@ body {
 .p-2 {
   margin-top: 4rem;
 }
+.gif {
+  
+  justify-content: center;
+  width: auto;
+  border: red dotted;
+  align-items: center;
+  position: absolute;
+  left: 47%;
+  display: none;
+}
+.gif img {
+  width: 2rem;
+}
 #ElectricColor {
   background-color: #4f709c;
 }
@@ -26,7 +39,7 @@ body {
   background-color: #f5efe7;
 }
 .fireDiv {
-  font-weight:900;
+  font-weight: 900;
 }
 main {
   background-color: #b5c99a;
@@ -109,5 +122,10 @@ footer {
     gap: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  .gif{
+   display: block;
+    top: 12rem;
+    left: 40%;
   }
 }
