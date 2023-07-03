@@ -17,10 +17,8 @@ body {
   margin-top: 4rem;
 }
 .gif {
-  
   justify-content: center;
   width: auto;
-  border: red dotted;
   align-items: center;
   position: absolute;
   left: 47%;
@@ -123,8 +121,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-  .gif{
-   display: block;
+  .gif {
     top: 12rem;
     left: 40%;
   }
