@@ -10,17 +10,26 @@ body {
   color: #0b2314;
   /* background-color: #e0f5e8; */
 }
+#rockcolor {
+  background-color: #a0bfe0;
+}
 .p-2 {
   margin-top: 4rem;
 }
-#color {
-  background-color: #F9DBBB;
+#ElectricColor {
+  background-color: #4f709c;
 }
-.fireDiv{
-  font-weight: bolder;
+#colorater {
+  background-color: #d8c4b6;
+}
+#color {
+  background-color: #f5efe7;
+}
+.fireDiv {
+  font-weight:900;
 }
 main {
-  background-color: #4E6E81;
+  background-color: #b5c99a;
 }
 .list-item {
   list-style-type: none;
@@ -32,7 +41,7 @@ main {
   margin-left: 2rem;
 }
 footer {
-  position: fixed;
+  display: block;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -83,7 +92,22 @@ footer {
   }
   #rowro {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 5px;
+  }
+  #WaterRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+  }
+  #elecrOW {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #rockrow {
+    gap: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

@@ -70,18 +70,14 @@ searchBtn.addEventListener('click', () => {
 
 
 //fire type
-const containerFire = document.querySelector('#container-fire');
 const listgroup =document.querySelector('#rowro')
 firetype = async () => {
   try {
     const url = await fetch(`https://pokeapi.co/api/v2/type/fire`);
 
     const data = await url.json()
-    
-    console.log(data.pokemon[1])
 
     data.pokemon.slice(0,60).forEach((result) => {
-      console.log(result)
       
       const div = document.createElement('div')
       div.classList.add('col','p-1','fireDiv');
@@ -90,11 +86,74 @@ firetype = async () => {
       
     })
     
-
-
   } catch (error) {
     console.log('Error:', error);
   }
 }
 
+//water tpe
+const WaterRow = document.querySelector('#WaterRow');
+waterType = async () => {
+  try {
+    const url = await fetch(`https://pokeapi.co/api/v2/type/water`);
+
+    const data = await url.json()
+
+    data.pokemon.slice(0,60).forEach((result) => {
+      
+      const div = document.createElement('div')
+      div.classList.add('col','p-1','fireDiv');
+      div.textContent = result.pokemon.name;
+      WaterRow.appendChild(div)
+      
+    })
+    
+  } catch (error) {
+    console.log('Error:', error);
+  }
+}
+
+const elecrOW = document.querySelector('#elecrOW');
+electricType = async () => {
+  try {
+    const url = await fetch(`https://pokeapi.co/api/v2/type/electric`);
+
+    const data = await url.json()
+
+    data.pokemon.slice(0,60).forEach((result) => {
+      
+      const div = document.createElement('div')
+      div.classList.add('col','p-1','fireDiv');
+      div.textContent = result.pokemon.name;
+      elecrOW.appendChild(div)
+    })
+    
+  } catch (error) {
+    console.log('Error:', error);
+  }
+}
+
+const rockrow = document.querySelector('#rockrow');
+rockType = async () => {
+  try {
+    const url = await fetch(`https://pokeapi.co/api/v2/type/rock`);
+
+    const data = await url.json()
+
+    data.pokemon.slice(0,60).forEach((result) => {
+      
+      const div = document.createElement('div')
+      div.classList.add('col','p-1','fireDiv');
+      div.textContent = result.pokemon.name;
+      rockrow.appendChild(div);
+    })
+    
+  } catch (error) {
+    console.log('Error:', error);
+  }
+}
+
+electricType()
+waterType()
 firetype()
+rockType()
